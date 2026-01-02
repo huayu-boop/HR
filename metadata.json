@@ -1,0 +1,7 @@
+{
+  "name": "Smart Onboard - Next-Gen Employee Portal",
+  "description": "A sophisticated employee onboarding and data analysis platform designed for modern HR strategies, featuring AI-driven talent insights and interactive data visualization.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
