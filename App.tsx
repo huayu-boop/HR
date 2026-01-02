@@ -168,7 +168,14 @@ export default function App() {
           <div className="max-w-2xl mx-auto text-center py-24 bg-white rounded-[3rem] border border-slate-200 shadow-xl px-12">
             <div className="bg-emerald-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-8 shadow-inner"><Zap className="text-emerald-600 w-10 h-10" /></div>
             <h2 className="text-3xl font-bold text-slate-900">入職資料已建檔</h2>
-            <p className="text-slate-500 mt-4 mb-12 text-lg font-medium">歡迎您 {lastSubmission.fullName}，系統已根據您的資料啟動個人化分析。</p>
+            <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 mt-6 mb-12">
+              <p className="text-slate-500 text-lg font-medium">
+                歡迎加入團隊，<span className="text-indigo-600 font-bold">{lastSubmission.fullName}</span>！
+              </p>
+              <p className="text-slate-400 text-sm mt-1">
+                您的職位為：<span className="text-slate-700 font-black uppercase tracking-wider">{lastSubmission.position}</span>
+              </p>
+            </div>
             <button onClick={() => setView('portal')} className="bg-slate-900 text-white px-12 py-4 rounded-2xl font-bold hover:bg-slate-800 transition-all shadow-lg">回首頁</button>
           </div>
         )}
